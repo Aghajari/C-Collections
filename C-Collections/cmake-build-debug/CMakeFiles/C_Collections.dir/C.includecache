@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aghajari/CLionProjects/C-Collections/array_list.h
+
+/Users/aghajari/CLionProjects/C-Collections/collection.h
+
+/Users/aghajari/CLionProjects/C-Collections/iterator.h
+
+/Users/aghajari/CLionProjects/C-Collections/linked_list.h
+
+/Users/aghajari/CLionProjects/C-Collections/main.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+collection.h
+/Users/aghajari/CLionProjects/C-Collections/collection.h
+iterator.h
+/Users/aghajari/CLionProjects/C-Collections/iterator.h
+array_list.h
+/Users/aghajari/CLionProjects/C-Collections/array_list.h
+linked_list.h
+/Users/aghajari/CLionProjects/C-Collections/linked_list.h
+
