@@ -14,8 +14,9 @@
   - [Fill](https://www.geeksforgeeks.org/collections-fill-method-in-java-with-examples/)
   - [Reverse](https://www.geeksforgeeks.org/collections-reverse-method-in-java-with-examples/)
   - [Rotate](https://www.geeksforgeeks.org/java-util-collections-rotate-method-java-examples/)
+- [HashMap](#hashmap)
 - HashSet (TO-DO)
-- HashMap (TO-DO)
+
 
 
 ## ArrayList
@@ -181,4 +182,54 @@ void * value = collection_binarySearch(coll, key, comparator);
 void * value = collection_max(coll, comparator);
 void * value = collection_min(coll, comparator);
 collection_fill(coll, value);
+```
+
+## HashMap
+
+What is [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/)?
+> HashMap stores the data in (Key, Value) pairs...
+
+### Usage
+
+- include HashMap header file
+```c
+#include "hash_map.h"
+```
+
+- Create HashMap struct :
+```c
+struct HashMap *map = hash_map_create(); // or hash_map_create2(capacity);
+```
+
+- Put key-values :
+```c
+hash_map_string_put(map, "Key1", "Item1");
+hash_map_int_put(map, 2, "Item2");
+hash_map_put(map, key, value);
+```
+
+- Get value by key :
+```c
+printf("%s\n", (char *) hash_map_string_get(map, "Key1"));
+printf("%s\n", (char *) hash_map_int_get(map, 2));
+```
+
+- Remove value by key
+```c
+hash_map_int_remove(map, 2);
+```
+
+- Checkout other functions such as `containsKey`, `containsValue`, `putAll`, ...
+
+### Iterator over keys, values and entries
+
+`hash_map_entryIterator`, `hash_map_keyIterator` and `hash_map_valueIterator`
+
+```c
+struct Iterator *iter = hash_map_entryIterator(map);
+while (iterator_has_next(iter)) {
+    struct HashMapEntry *entry = iterator_next(iter);
+    printf("Key: %s, Value: %s\n", (char *) entry->key, (char *) entry->value);
+}
+iterator_destroy(iter);
 ```
