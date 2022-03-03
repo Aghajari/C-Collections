@@ -9,7 +9,12 @@ CMakeFiles/C_Collections.dir/array_list.c.o: \
 CMakeFiles/C_Collections.dir/collection.c.o: \
  ../array_list.h \
  ../collection.c \
- ../collection.h
+ ../collection.h \
+ ../iterator.h
+CMakeFiles/C_Collections.dir/hash_map.c.o: \
+ ../hash_map.c \
+ ../hash_map.h \
+ ../iterator.h
 CMakeFiles/C_Collections.dir/iterator.c.o: \
  ../array_list.h \
  ../iterator.c \
@@ -22,6 +27,7 @@ CMakeFiles/C_Collections.dir/linked_list.c.o: \
 CMakeFiles/C_Collections.dir/main.c.o: \
  ../array_list.h \
  ../collection.h \
+ ../hash_map.h \
  ../iterator.h \
  ../linked_list.h \
  ../main.c

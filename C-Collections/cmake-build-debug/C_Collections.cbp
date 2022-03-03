@@ -90,6 +90,12 @@
 		<Unit filename="/Users/aghajari/CLionProjects/C-Collections/collection.h">
 			<Option target="C_Collections"/>
 		</Unit>
+		<Unit filename="/Users/aghajari/CLionProjects/C-Collections/hash_map.c">
+			<Option target="C_Collections"/>
+		</Unit>
+		<Unit filename="/Users/aghajari/CLionProjects/C-Collections/hash_map.h">
+			<Option target="C_Collections"/>
+		</Unit>
 		<Unit filename="/Users/aghajari/CLionProjects/C-Collections/iterator.c">
 			<Option target="C_Collections"/>
 		</Unit>

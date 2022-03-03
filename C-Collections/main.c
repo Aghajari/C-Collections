@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 #include "collection.h"
 #include "iterator.h"
 
 void linked_list_test();
 void array_list_test();
+void hash_map_test();
 
 int main() {
+    hash_map_test();
     array_list_test();
     linked_list_test();
 }
@@ -44,7 +45,6 @@ void array_list_test(){
     printf("\n");
     iterator_destroy(iter);
 }
-
 
 // *** LINKED LIST ***
 #include "linked_list.h"
@@ -96,5 +96,27 @@ void linked_list_test() {
         printf("%s -> ", (char *) iterator_next(iter));
     }
     printf("\n");
+    iterator_destroy(iter);
+}
+
+// *** HASH MAP ***
+#include "hash_map.h"
+
+void hash_map_test(){
+    printf("\nHASH MAP:\n");
+    struct HashMap *map = hash_map_create();
+    hash_map_string_put(map, "Key1", "Item1");
+    hash_map_string_put(map, "Key2", "Item2");
+    hash_map_string_put(map, "Key3", "Item3");
+
+    printf("Items Count: %d\n", hash_map_size(map));
+    printf("Get Key1: %s\n", (char *) hash_map_string_get(map, "Key1"));
+
+    printf("\nITERATOR IN HASH MAP (ENTRY):\n");
+    struct Iterator *iter = hash_map_entryIterator(map);
+    while (iterator_has_next(iter)) {
+        struct HashMapEntry *entry = iterator_next(iter);
+        printf("Key: %s, Value: %s\n", (char *) entry->key, (char *) entry->value);
+    }
     iterator_destroy(iter);
 }

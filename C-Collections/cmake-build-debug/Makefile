@@ -177,6 +177,30 @@ collection.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Collections.dir/build.make CMakeFiles/C_Collections.dir/collection.c.s
 .PHONY : collection.c.s
 
+hash_map.o: hash_map.c.o
+.PHONY : hash_map.o
+
+# target to build an object file
+hash_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Collections.dir/build.make CMakeFiles/C_Collections.dir/hash_map.c.o
+.PHONY : hash_map.c.o
+
+hash_map.i: hash_map.c.i
+.PHONY : hash_map.i
+
+# target to preprocess a source file
+hash_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Collections.dir/build.make CMakeFiles/C_Collections.dir/hash_map.c.i
+.PHONY : hash_map.c.i
+
+hash_map.s: hash_map.c.s
+.PHONY : hash_map.s
+
+# target to generate assembly for a file
+hash_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Collections.dir/build.make CMakeFiles/C_Collections.dir/hash_map.c.s
+.PHONY : hash_map.c.s
+
 iterator.o: iterator.c.o
 .PHONY : iterator.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... collection.o"
 	@echo "... collection.i"
 	@echo "... collection.s"
+	@echo "... hash_map.o"
+	@echo "... hash_map.i"
+	@echo "... hash_map.s"
 	@echo "... iterator.o"
 	@echo "... iterator.i"
 	@echo "... iterator.s"

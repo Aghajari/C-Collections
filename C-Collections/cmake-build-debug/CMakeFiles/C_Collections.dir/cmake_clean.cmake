@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/C_Collections.dir/array_list.c.o"
   "CMakeFiles/C_Collections.dir/collection.c.o"
+  "CMakeFiles/C_Collections.dir/hash_map.c.o"
   "CMakeFiles/C_Collections.dir/iterator.c.o"
   "CMakeFiles/C_Collections.dir/linked_list.c.o"
   "CMakeFiles/C_Collections.dir/main.c.o"

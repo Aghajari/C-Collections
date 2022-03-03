@@ -10,6 +10,18 @@
 
 /Users/aghajari/CLionProjects/C-Collections/collection.h
 
+/Users/aghajari/CLionProjects/C-Collections/hash_map.c
+stdlib.h
+-
+iterator.h
+/Users/aghajari/CLionProjects/C-Collections/iterator.h
+hash_map.h
+/Users/aghajari/CLionProjects/C-Collections/hash_map.h
+string.h
+-
+
+/Users/aghajari/CLionProjects/C-Collections/hash_map.h
+
 /Users/aghajari/CLionProjects/C-Collections/iterator.h
 
 /Users/aghajari/CLionProjects/C-Collections/linked_list.h
@@ -19,8 +31,6 @@ stdio.h
 -
 string.h
 -
-stdlib.h
--
 collection.h
 /Users/aghajari/CLionProjects/C-Collections/collection.h
 iterator.h
@@ -29,4 +39,6 @@ array_list.h
 /Users/aghajari/CLionProjects/C-Collections/array_list.h
 linked_list.h
 /Users/aghajari/CLionProjects/C-Collections/linked_list.h
+hash_map.h
+/Users/aghajari/CLionProjects/C-Collections/hash_map.h
 
